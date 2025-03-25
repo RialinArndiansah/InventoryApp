@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <solid android:color="#A569BD"/> <!-- Warna background -->
+    <solid android:color="#0288D1"/> <!-- Warna background -->
     <corners android:radius="10dp"/> <!-- Radius sudut -->
 </shape>

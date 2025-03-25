@@ -5,101 +5,107 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 android:padding="16dp"
-    android:background="#F0F0F0">
+    android:background="#EEEEEE">
 
 <!-- Toolbar dengan ikon back -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:orientation="horizontal"
-    android:paddingVertical="16dp">
 
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/back_icon"
-        android:foreground="?attr/selectableItemBackground"
-        app:tint="#A569BD"
-        android:layout_gravity="center_vertical"/>
+    <!-- EditText Item Name -->
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tambah Barang"
-        android:textSize="20sp"
-        android:layout_marginStart="10dp"
-        android:textColor="@color/black"
-        android:layout_gravity="center_vertical"/>
-</LinearLayout>
-
-<!-- EditText Item Name -->
-<EditText
-    android:id="@+id/edtNamaBarang"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Nama Barang*"
-    android:inputType="text"
-    android:background="@drawable/edittext_background"
-    android:padding="12dp"
-    android:textSize="16sp"/>
-
-<EditText
-    android:id="@+id/edtNamaKategori"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:inputType="text"
-    android:hint="Nama Kategori*"
-    android:background="@drawable/edittext_false"
-    android:padding="12dp"
-    android:layout_marginTop="8dp"
-    android:enabled="false"
-    android:textSize="16sp"/>
-
-<!-- Input Harga -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="12dp"
-    android:background="@drawable/edittext_background"
-    android:layout_marginTop="8dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rp. "
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:paddingEnd="10dp"/>
-
-    <EditText
-        android:id="@+id/edtHargaBarang"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Harga Barang*"
-        android:inputType="number"
-        android:background="@android:color/transparent"
-        android:textSize="16sp"
-        android:focusable="true"
-        android:focusableInTouchMode="true"/>
-</LinearLayout>
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/back_icon"
+            app:tint="#000000" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Tambah Barang"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtNamaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Nama Barang*"
+        android:backgroundTint="@color/cardview_light_background"
+        android:inputType="text"
+        android:padding="24dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtNamaKategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#F6F6F6"
+        android:enabled="false"
+        android:hint="Nama Kategori*"
+
+        android:inputType="text"
+        android:padding="24dp"
+        android:textSize="20sp" />
+
+<!-- Input Harga -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/cardview_light_background"
+        android:orientation="horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="12dp"
+            android:text="Rp. "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtHargaBarang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Harga Barang*"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 
 
 <!-- EditText Jumlah Barang -->
-<EditText
-    android:id="@+id/edtJumlahBarang"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Jumlah Barang*"
-    android:inputType="number"
-    android:background="@drawable/edittext_background"
-    android:padding="12dp"
-    android:textSize="16sp"
-    android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/edtJumlahBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Jumlah Barang*"
+        android:backgroundTint="@color/cardview_light_background"
+        android:inputType="number"
+        android:padding="24dp"
+        android:textSize="16sp" />
 
 <TextView
     android:layout_width="wrap_content"

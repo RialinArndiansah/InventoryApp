@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:paddingVertical="16dp"
-    android:background="#F0F0F0"
+    android:background="#EEEEEE"
 tools:context=".activity.MainActivity">
 
     <LinearLayout
@@ -25,7 +25,7 @@ tools:context=".activity.MainActivity">
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/back_icon"
                 android:layout_gravity="center_vertical"
-                app:tint="#A569BD" />
+                app:tint="#000000" />
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -71,7 +71,7 @@ tools:context=".activity.MainActivity">
     app:tint="@android:color/white"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:backgroundTint="#A569BD"
+    app:backgroundTint="#0288D1"
     android:layout_margin="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
